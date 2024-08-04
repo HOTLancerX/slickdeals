@@ -12,8 +12,8 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
         {menu === 1 && (
           <div className="bg-main py-4">
             <div className="container">
-              <div className="text-white grid grid-cols-1 md:grid-cols-5 gap-2 px-2 py-6">
-                <div className="hidden md:flex flex-col space-y-1 text-sm font-normal">
+              <div className="text-white grid grid-cols-2 md:grid-cols-5 gap-2 px-2 py-6">
+                <div className="flex flex-col space-y-1 text-sm font-normal">
                   <h1 className="text-xl">
                   Follow Us
                   </h1>
@@ -38,7 +38,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                     YouTube
                   </Link>
                 </div>
-                <div className="hidden md:flex flex-col space-y-1 text-sm font-normal">
+                <div className="flex flex-col space-y-1 text-sm font-normal">
                   <h1 className="text-xl">
                   About
                   </h1>
@@ -68,7 +68,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                     Contact Us
                   </Link>
                 </div>
-                <div className="hidden md:flex flex-col space-y-1 text-sm font-normal">
+                <div className="flex flex-col space-y-1 text-sm font-normal">
                   <h1 className="text-xl">
                   More
                   </h1>
@@ -93,7 +93,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                     Slickdeals Cashback Rewards
                   </Link>
                 </div>
-                <div className="hidden md:flex flex-col space-y-1 text-sm font-normal">
+                <div className="flex flex-col space-y-1 text-sm font-normal">
                   <h1 className="text-xl">
                   Legal
                   </h1>
@@ -123,7 +123,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                     Website Accessibility
                   </Link>
                 </div>
-                <div className="hidden md:flex flex-col space-y-1 text-sm font-normal">
+                <div className="flex flex-col space-y-3 col-span-2 md:col-span-1 text-sm font-normal">
                   <h1 className="text-xl">
                   Legal
                   </h1>
@@ -162,7 +162,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
             <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
               <Link
                 href="/"
-                className='w-2/12 flex items-center'
+                className='flex items-center mb-2 md:mb-0'
               >
                 <Image
                   src="/icon.svg"
@@ -181,8 +181,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
               </Link>
               <div>
               Copyright © 2024 SlickDeals. All rights reserved.
-              </div>
-              
+              </div>              
             </div>
           </div>
         </div>
