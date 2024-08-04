@@ -9,7 +9,7 @@ const IndexPage: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-2">
             <div className="w-full md:w-9/12">
               <Carousel
-                title="5G Mobile Phones"
+                title="Just For You"
                 img=""
                 link="/"
                 left={0}
@@ -21,7 +21,7 @@ const IndexPage: React.FC = () => {
                 items={[
                   {
                     img: "/product/1.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Supply a Four Piece Set of American Solid Color European and American Style Chemical Fiber Bed Sheets",
                     featured: "Featured!",
                     sele: "",
@@ -29,7 +29,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/2.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "China Wholesale Cheap Hand Made Brazilian Virgin Remy Long Human Hair Natural Bone Straight 360 Full HD Transparent Swiss Lace Front Wigs for Black Women",
                     featured: "Featured!",
                     sele: "",
@@ -37,7 +37,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/3.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Natural Bone Straight 360 Full HD Transparent Swiss Lace Front Wigs for Black Women",
                     featured: "",
                     sele: "Sele!",
@@ -45,7 +45,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/4.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Floral Blue Bed Skirt 4-Piece Polyester Bedding Set",
                     featured: "",
                     sele: "Sele!",
@@ -53,7 +53,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/5.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Xuchang Hair Factory Kbeth Straight Kinky Curly Body Wave 613 Bob Wigs Full Lace Front Brazilian 100% Virgin Natural Human Hair Wig China Wholesale",
                     featured: "",
                     sele: "",
@@ -61,7 +61,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/6.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Straight Kinky Curly Body Wave 613 Bob Wigs Full Lace Front Brazilian 100% Virgin Natural Human Hair Wig China Wholesale",
                     featured: "US$ 5-10 /Piece",
                     sele: "",
@@ -69,7 +69,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/7.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Wigs Full Lace Front Brazilian 100% Virgin Natural Human Hair Wig China Wholesale",
                     featured: "",
                     sele: "",
@@ -77,7 +77,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/8.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "8 Inch to 30 Inch Stw Natural Raw Brazilian Remy Human Hair Weaving",
                     featured: "",
                     sele: "",
@@ -85,7 +85,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/9.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Natural Raw Brazilian Remy Human Hair Weaving",
                     featured: "",
                     sele: "",
@@ -93,7 +93,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/10.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Super Soft 300tc 100% Cotton Bedding Set",
                     featured: "",
                     sele: "",
@@ -128,7 +128,7 @@ const IndexPage: React.FC = () => {
                 items={[
                   {
                     img: "/product/1.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Supply a Four Piece Set of American Solid Color European and American Style Chemical Fiber Bed Sheets",
                     featured: "Featured!",
                     sele: "",
@@ -136,7 +136,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/2.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "China Wholesale Cheap Hand Made Brazilian Virgin Remy Long Human Hair Natural Bone Straight 360 Full HD Transparent Swiss Lace Front Wigs for Black Women",
                     featured: "Featured!",
                     sele: "",
@@ -144,7 +144,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/3.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Natural Bone Straight 360 Full HD Transparent Swiss Lace Front Wigs for Black Women",
                     featured: "",
                     sele: "Sele!",
@@ -152,7 +152,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/4.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Floral Blue Bed Skirt 4-Piece Polyester Bedding Set",
                     featured: "",
                     sele: "Sele!",
@@ -160,7 +160,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/5.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Xuchang Hair Factory Kbeth Straight Kinky Curly Body Wave 613 Bob Wigs Full Lace Front Brazilian 100% Virgin Natural Human Hair Wig China Wholesale",
                     featured: "",
                     sele: "",
@@ -168,7 +168,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/6.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Straight Kinky Curly Body Wave 613 Bob Wigs Full Lace Front Brazilian 100% Virgin Natural Human Hair Wig China Wholesale",
                     featured: "US$ 5-10 /Piece",
                     sele: "",
@@ -176,7 +176,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/7.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Wigs Full Lace Front Brazilian 100% Virgin Natural Human Hair Wig China Wholesale",
                     featured: "",
                     sele: "",
@@ -184,7 +184,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/8.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "8 Inch to 30 Inch Stw Natural Raw Brazilian Remy Human Hair Weaving",
                     featured: "",
                     sele: "",
@@ -192,7 +192,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/9.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Natural Raw Brazilian Remy Human Hair Weaving",
                     featured: "",
                     sele: "",
@@ -200,7 +200,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/10.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Super Soft 300tc 100% Cotton Bedding Set",
                     featured: "",
                     sele: "",
@@ -208,7 +208,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/11.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Natural Raw Brazilian Remy Human Hair Weaving",
                     featured: "",
                     sele: "",
@@ -216,7 +216,7 @@ const IndexPage: React.FC = () => {
                   },
                   {
                     img: "/product/13.jpg",
-                    link: "/1",
+                    link: "/products/1",
                     title: "Super Soft 300tc 100% Cotton Bedding Set",
                     featured: "",
                     sele: "",

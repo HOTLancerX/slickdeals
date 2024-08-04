@@ -108,23 +108,115 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                   className="transition-opacity duration-500 pr-2"
                   style={{ flex: `0 0 ${itemWidth}%` }}
                 >
-                  <Link href={item.link} className='p-2 block border shadow bg-white rounded-md'>
-                    <div className='flex items-center justify-center relative h-44 md:h-60'>
+                  <div className='block border p-2 shadow bg-white rounded-md'>
+                    <div className='pb-2 mb-2 border-b flex items-center'>
+                      <Image
+                        src="/user/1.jpg"
+                        width={30}
+                        height={30}
+                        alt=''
+                        className='mr-1 rounded-full object-cover'
+                      />
+                      <div className='text-xs'>
+                        <h1>
+                          <span className='font-light mr-1'>found by</span>
+                          HeRa Khan
+                        </h1>
+                        <p>
+                        43 minutes ago
+                        </p>
+                      </div>
+                    </div>
+                    <Link href={item.link}>
+                      <div className='flex items-center justify-center relative h-44 md:h-52'>
+                        <Image
+                          src={item.img}
+                          width={600}
+                          height={600}
+                          alt={item.title}
+                          className="w-min h-full object-cover"
+                        />
+                      </div>
+                      <div className="mt-1 flex flex-col items-start space-y-1">
+                        <h3 className="text-md line-clamp-3">
+                          {item.title}
+                        </h3>
+                        <div className='flex items-center space-x-2 my-2'>
+                          <strong className='text-md'>$500</strong>                      
+                          <del className='text-red-500'>$1000</del>
+                        </div>
+                        <p>
+                          Amazon
+                        </p>
+                      </div>
+                    </Link>
+                    <div className='flex items-center justify-between border-t pt-1 mt-2'>
+                      <Link
+                        href="/"
+                        className='text-sm text-gray-400 flex space-x-1 items-center'
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M23 10a2 2 0 0 0-2-2h-6.32l.96-4.57c.02-.1.03-.21.03-.32c0-.41-.17-.79-.44-1.06L14.17 1L7.59 7.58C7.22 7.95 7 8.45 7 9v10a2 2 0 0 0 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73zM1 21h4V9H1z" />
+                        </svg>
+                        <p>100</p>
+                      </Link>
+                      <Link
+                        href="/"
+                        className='text-sm text-gray-400 flex space-x-1 items-center'
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M6 14h12v-2H6zm0-3h12V9H6zm0-3h12V6H6zM4 18q-.825 0-1.412-.587T2 16V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v18l-4-4z" />
+                        </svg>
+                        <p>100</p>
+                      </Link>
+                      <Link
+                        href="/"
+                        className='text-sm text-gray-400 flex space-x-1 items-center'
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                          <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          {slider === 2 && (
+            <div className={`grid grid-cols-1 md:grid-cols-${desktops} gap-3`}>
+              {items.slice(0, limit).map((item, index) => (
+                <div key={index} className='border bg-white p-1 rounded-md'>
+                  <div className='pb-2 border-b flex items-center'>
+                    <Image
+                      src="/user/1.jpg"
+                      width={30}
+                      height={30}
+                      alt=''
+                      className='mr-1 rounded-full object-cover'
+                    />
+                    <div className='text-xs'>
+                      <h1>
+                        <span className='font-light mr-1'>found by</span>
+                        HeRa Khan
+                      </h1>
+                      <p>
+                      43 minutes ago
+                      </p>
+                    </div>
+                  </div>
+                  <Link href={item.link} className="flex flex-row md:flex-col">
+                    <div className='w-1/3 md:w-full flex items-center justify-center relative h-28 md:h-60'>
                       <Image
                         src={item.img}
                         width={600}
                         height={600}
                         alt={item.title}
-                        className="w-min h-full object-cover"
+                        className="w-min h-min max-h-full object-cover"
                       />
-                      <p className='bg-main/50 text-[8px] md:rotate-0 -rotate-90 absolute md:right-0 -right-6 top-1 md:top-0 md:text-xs px-2 py-0.5 inline-flex rounded text-white'>
-                        50% off
-                      </p>
                     </div>
-                    <div className="mt-1 flex flex-col items-start space-y-1">
-                      <h3 className="text-md line-clamp-3">
-                        {item.title}
-                      </h3>
+                    <div className="w-2/3 md:w-full md:mt-1 pl-2 md:pl-0 flex flex-col items-start space-y-1">
+                      <h3 className="text-sm leading-tight md:line-clamp-3 line-clamp-2">{item.title}</h3>
                       <div className='flex items-center space-x-2 my-2'>
                         <strong className='text-md'>$500</strong>                      
                         <del className='text-red-500'>$1000</del>
@@ -134,37 +226,35 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                       </p>
                     </div>
                   </Link>
+                  <div className='flex items-center justify-between border-t pt-1 mt-2'>
+                    <Link
+                      href="/"
+                      className='text-sm text-gray-400 flex space-x-1 items-center'
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M23 10a2 2 0 0 0-2-2h-6.32l.96-4.57c.02-.1.03-.21.03-.32c0-.41-.17-.79-.44-1.06L14.17 1L7.59 7.58C7.22 7.95 7 8.45 7 9v10a2 2 0 0 0 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73zM1 21h4V9H1z" />
+                      </svg>
+                      <p>100</p>
+                    </Link>
+                    <Link
+                      href="/"
+                      className='text-sm text-gray-400 flex space-x-1 items-center'
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6 14h12v-2H6zm0-3h12V9H6zm0-3h12V6H6zM4 18q-.825 0-1.412-.587T2 16V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v18l-4-4z" />
+                      </svg>
+                      <p>100</p>
+                    </Link>
+                    <Link
+                      href="/"
+                      className='text-sm text-gray-400 flex space-x-1 items-center'
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z" />
+                      </svg>
+                    </Link>
+                  </div>
                 </div>
-              ))}
-            </div>
-          )}
-          {slider === 2 && (
-            <div className={`grid grid-cols-1 md:grid-cols-${desktops} gap-3`}>
-              {items.slice(0, limit).map((item, index) => (
-                <Link key={index} href={item.link} className="flex flex-row md:flex-col border bg-white p-1 rounded-md">
-                  <div className='w-1/3 md:w-full flex items-center justify-center relative h-28 md:h-60'>
-                    <Image
-                      src={item.img}
-                      width={600}
-                      height={600}
-                      alt={item.title}
-                      className="w-min h-min max-h-full object-cover"
-                    />
-                    <p className='bg-main/50 text-[8px] md:rotate-0 -rotate-90 absolute md:right-0 -right-3 top-4 md:top-0 md:text-xs px-2 py-0.5 inline-flex rounded text-white'>
-                      50% off
-                    </p>
-                  </div>
-                  <div className="w-2/3 md:w-full md:mt-1 pl-2 md:pl-0 flex flex-col items-start space-y-1">
-                    <h3 className="text-md leading-tight md:line-clamp-3 line-clamp-2">{item.title}</h3>
-                    <div className='flex items-center space-x-2 my-2'>
-                      <strong className='text-md'>$500</strong>                      
-                      <del className='text-red-500'>$1000</del>
-                    </div>
-                    <p>
-                      Amazon
-                    </p>
-                  </div>
-                </Link>
               ))}
             </div>
           )}
