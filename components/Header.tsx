@@ -12,6 +12,12 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
   return (
     <>
       <div>
+        <div className='bg-black text-center text-gray-200 text-xs hidden md:block py-1'>
+          <i>
+          Slickdeals is community-supported. 
+          We may get paid by brands or deals, including promoted items.
+          </i>
+        </div>
         <div className="bg-main bg-bg bg-cover bg-repeat sticky z-50 top-0">
           <div className="container">
             <div className="flex md:items-center flex-row w-full py-2">
