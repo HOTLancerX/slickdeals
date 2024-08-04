@@ -138,7 +138,28 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
         {menu === 1 && (
         <div className="bg-white hidden md:block">
           <div className="container">
-            
+            <div className='flex space-x-4 items-center overflow-x-auto no-ber text-secondary text-sm font-semibold'>
+              <div className='flex-none'>
+                <h4 className='flex items-center text-main'>
+                  <span className="text-nowrap mr-1 whitespace-nowrap text-xs md:text-sm leading-none font-medium">Trending</span>
+                  <svg width={20} height={20}  viewBox="0 0 18 18" fill="currentColor" preserveAspectRatio="xMinYMin meet" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9814 8.45558C16.9814 6.48467 17 5.54807 16.5281 4.70604C16.2423 4.19619 15.6099 4.08111 15.1682 4.08111C14.2915 4.08111 13.4159 4.12919 12.5391 4.12919C10.182 4.12919 8.36883 3.55233 8.36883 5.47517C8.36883 7.34995 10.0913 7.15766 12.4031 7.15766C11.9045 7.68644 11.3152 8.40751 10.59 9.17665C10.1445 9.60614 9.73515 10.0356 9.36202 10.3966C9.2877 10.4685 9.17069 10.4703 9.09508 10.3998C8.86701 10.187 8.63371 9.9462 8.36883 9.70543C7.59784 8.88781 6.77668 8.08296 6.25079 7.57706C5.94136 7.2794 5.45365 7.28627 5.1494 7.58922C4.55243 8.18363 3.61846 9.11882 3.15598 9.60929C1.70544 11.1476 0.209578 11.9167 1.4788 13.2627C2.79334 14.6567 3.51861 13.0704 4.96914 11.5321C5.24112 11.2918 5.46776 11.0514 5.69441 10.8111C5.96638 11.0514 6.23836 11.3398 6.55566 11.6763C7.01401 12.1624 8.06969 13.0709 8.70911 13.6114C9.00875 13.8647 9.44659 13.8586 9.74055 13.5987C10.508 12.9202 11.9206 11.6593 12.4031 11.1476C13.0118 10.5021 13.6205 9.93362 14.1316 9.44221C14.1961 9.38022 14.3034 9.4276 14.3009 9.51701C14.2465 11.5017 14.0915 12.8781 15.4855 12.8781C17.1174 12.8781 17.0267 11.9167 16.9814 8.45558Z" fill="inherit"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9814 8.45558C16.9814 6.48467 17 5.54807 16.5281 4.70604C16.2423 4.19619 15.6099 4.08111 15.1682 4.08111C14.2915 4.08111 13.4159 4.12919 12.5391 4.12919C10.182 4.12919 8.36883 3.55233 8.36883 5.47517C8.36883 7.34995 10.0913 7.15766 12.4031 7.15766C11.9045 7.68644 11.3152 8.40751 10.59 9.17665C10.1445 9.60614 9.73515 10.0356 9.36202 10.3966C9.2877 10.4685 9.17069 10.4703 9.09508 10.3998C8.86701 10.187 8.63371 9.9462 8.36883 9.70543C7.59784 8.88781 6.77668 8.08296 6.25079 7.57706C5.94136 7.2794 5.45365 7.28627 5.1494 7.58922C4.55243 8.18363 3.61846 9.11882 3.15598 9.60929C1.70544 11.1476 0.209578 11.9167 1.4788 13.2627C2.79334 14.6567 3.51861 13.0704 4.96914 11.5321C5.24112 11.2918 5.46776 11.0514 5.69441 10.8111C5.96638 11.0514 6.23836 11.3398 6.55566 11.6763C7.01401 12.1624 8.06969 13.0709 8.70911 13.6114C9.00875 13.8647 9.44659 13.8586 9.74055 13.5987C10.508 12.9202 11.9206 11.6593 12.4031 11.1476C13.0118 10.5021 13.6205 9.93362 14.1316 9.44221C14.1961 9.38022 14.3034 9.4276 14.3009 9.51701C14.2465 11.5017 14.0915 12.8781 15.4855 12.8781C17.1174 12.8781 17.0267 11.9167 16.9814 8.45558Z" fill="inherit"></path>
+                  </svg>
+                </h4>
+              </div>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Tool Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Tech Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Video Games</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Laptops &amp; Computers</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Credit Card Offers</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Best Savings Accounts</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Sneaker Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Home Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Grocery Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Toy Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Clothing Deals</Link>
+            </div>
           </div>
         </div>
         )}

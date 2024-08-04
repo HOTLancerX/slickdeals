@@ -133,8 +133,8 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                   >
                     <Image
                       src="/g.png"
-                      width={203}
-                      height={60}
+                      width={147}
+                      height={30}
                       alt='logo'
                       className='p-2 h-12 w-min'
                     />
@@ -145,8 +145,8 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                   >
                     <Image
                       src="/a.png"
-                      width={203}
-                      height={60}
+                      width={147}
+                      height={30}
                       alt='logo'
                       className='p-2 h-12 w-min'
                     />
