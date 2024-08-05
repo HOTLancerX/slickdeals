@@ -88,10 +88,10 @@ const IndexPage: React.FC = () => {
                         <div className="flex flex-col-reverse md:flex-row bg-white gap-4">
                             <div className="w-full md:w-1/2">
                                 <div className="flex items-center space-x-2 text-xl p-2">
-                                    <h1 className="text-red-500 font-bold">
+                                    <h1 className=" font-bold">
                                         $100
                                     </h1>
-                                    <del>$150</del>
+                                    <del className="text-red-500">$150</del>
                                     <p className="font-normal text-gray-500 text-sm">
                                     + Free Shipping
                                     </p>
