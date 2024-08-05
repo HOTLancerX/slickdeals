@@ -7,7 +7,7 @@ const IndexPage: React.FC = () => {
     return (
         <>
             <div className="container my-4">
-                <div className="flex flex-col md:flex-row">
+                <div className="flex flex-col md:flex-row gap-4">
                     <div className="w-full md:w-1/2">
                         <div className="flex items-center">
                             <Image
@@ -19,7 +19,7 @@ const IndexPage: React.FC = () => {
                             />
                             <div>
                                 <h1 className=" font-bold text-secondary text-md">
-                                    HeRa Khan
+                                JQDeals
                                 </h1>
                                 <ul className="text-sm">
                                     <li>L5: Journeyman</li>
@@ -31,7 +31,7 @@ const IndexPage: React.FC = () => {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <div className="grid grid-cols-3 gap-3">
+                        <div className="grid md:grid-cols-3 grid-cols-2 gap-3">
                             <div className="flex items-center text-xs bg-white p-3 rounded-md shadow">
                                 <span>
                                 <svg width={30} height={30} className="text-secondary mr-2" viewBox="0 0 16 15" fill="currentColor" preserveAspectRatio="xMinYMin meet" role="img" xmlns="http://www.w3.org/2000/svg">

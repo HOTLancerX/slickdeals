@@ -67,6 +67,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
     <>
       <div className={`flex items-stretch ${left === 1 ? 'flex-row-reverse' : ''} my-3`}>
         <div className="w-full relative group">
+        {title &&
           <div className='flex items-center justify-between pb-2'>
             <h1 className='text-md font-bold'>
               {title}
@@ -100,6 +101,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
               )}
             </div>
           </div>
+          }
           {slider === 1 && (
             <div ref={containerRef} className="flex overflow-hidden transition-transform duration-500">
               {displayedItems.slice(0, limit).map((item, index) => (
@@ -138,7 +140,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                         />
                       </div>
                       <div className="mt-1 flex flex-col items-start space-y-1">
-                        <h3 className="text-md md:line-clamp-3 line-clamp-2">
+                        <h3 className="text-sm md:text-md md:line-clamp-3 line-clamp-2">
                           {item.title}
                         </h3>
                         <div className='flex items-center space-x-2 my-2'>
