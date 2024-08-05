@@ -80,13 +80,19 @@ const IndexPage: React.FC = () => {
             <div className="container my-4">
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="w-full md:w-[72%]">
-                        <div className="bg-white p-2 border-b">
+                        <div className="bg-white p-2 border-t-[6px] rounded-t-md border-secondary">
+                            <h1 className="bg-secondary text-white inline-flex text-sm px-2 rounded-md">
+                            Forum Thread
+                            </h1>
+                        </div>
+                        <div className="bg-white p-2 border-y">
                             <h1 className="text-xl font-bold">
                             Ace Hardware Stores: 5-Gallon Bucket + 20% Off Select Items Fitting in Bucket
                             </h1>
                         </div>
                         <div className="flex flex-col-reverse md:flex-row bg-white gap-4">
                             <div className="w-full md:w-1/2">
+                                
                                 <div className="flex items-center space-x-2 text-xl p-2">
                                     <h1 className=" font-bold">
                                         $100
