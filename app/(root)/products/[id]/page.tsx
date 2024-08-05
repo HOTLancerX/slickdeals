@@ -85,8 +85,17 @@ const IndexPage: React.FC = () => {
                             Ace Hardware Stores: 5-Gallon Bucket + 20% Off Select Items Fitting in Bucket
                             </h1>
                         </div>
-                        <div className="flex flex-col md:flex-row bg-white gap-4">
+                        <div className="flex flex-col-reverse md:flex-row bg-white gap-4">
                             <div className="w-full md:w-1/2">
+                                <div className="flex items-center space-x-2 text-xl p-2">
+                                    <h1 className="text-red-500 font-bold">
+                                        $100
+                                    </h1>
+                                    <del>$150</del>
+                                    <p className="font-normal text-gray-500 text-sm">
+                                    + Free Shipping
+                                    </p>
+                                </div>
                                 <div className="p-2">
                                     <h1 className="text-xs md:text-sm font-bold pb-2">
                                         Short description
@@ -128,7 +137,7 @@ const IndexPage: React.FC = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="w-full md:w-1/2">
+                            <div className="w-full md:w-1/2 p-2">
                                 <Sliders
                                     slides={[
                                         {
@@ -168,6 +177,13 @@ const IndexPage: React.FC = () => {
                                         },
                                     ]}
                                 />
+
+                                <Link
+                                    href="/"
+                                    className=" bg-secondary p-2 rounded-full text-white font-bold text-center w-full block my-4"
+                                >
+                                    Get Deal at SIERRA
+                                </Link>
                             </div>
                         </div>
 
@@ -459,6 +475,6 @@ const IndexPage: React.FC = () => {
             </div>
         </>
     );
-  };
+};
   
-  export default IndexPage;
+export default IndexPage;
