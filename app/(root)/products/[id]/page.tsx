@@ -1,4 +1,5 @@
 import Carousel from "@/components/Carousel";
+import Coupons from "@/components/Coupons";
 import ReadMore from "@/components/ReadMore";
 import Sliders from "@/components/Sliders";
 import Image from "next/image";
@@ -59,14 +60,14 @@ const IndexPage: React.FC = () => {
                         href="/"
                     >
                         <Image
-                            src="/ads-900.png"
+                            src="/ads/900.png"
                             width={900}
                             height={90}
                             alt=""
                             className="rounded-md hidden md:block w-full h-auto"
                         />
                         <Image
-                            src="/ads-300.png"
+                            src="/ads/300.png"
                             width={300}
                             height={300}
                             alt=""
@@ -78,7 +79,7 @@ const IndexPage: React.FC = () => {
 
             <div className="container my-4">
                 <div className="flex flex-col md:flex-row gap-4">
-                    <div className="w-full md:w-4/5">
+                    <div className="w-full md:w-[72%]">
                         <div className="bg-white p-2 border-b">
                             <h1 className="text-xl font-bold">
                             Ace Hardware Stores: 5-Gallon Bucket + 20% Off Select Items Fitting in Bucket
@@ -169,6 +170,20 @@ const IndexPage: React.FC = () => {
                                 />
                             </div>
                         </div>
+
+                        <Link
+                        href="/"
+                        className="bg-white p-1 md:p-2 mt-2 shadow border block"
+                        >
+                        <Image
+                            src="/ads/720.png"
+                            width={720}
+                            height={90}
+                            alt="ads"
+                            className="h-min w-full"
+                        />
+                        </Link>
+
                         <div className="my-3">
                             <h1 className="text-xs md:text-sm font-bold bg-white p-2 border-b">
                                 Description
@@ -245,8 +260,20 @@ const IndexPage: React.FC = () => {
                             </ReadMore>
                             </div>
                         </div>
+                        <Link
+                            href="/"
+                            className="bg-white p-1 md:p-2 shadow border block"
+                        >
+                            <Image
+                                src="/ads/720.png"
+                                width={720}
+                                height={90}
+                                alt="ads"
+                                className="h-min w-full"
+                            />
+                        </Link>
                     </div>
-                    <div className="w-full md:w-1/5 hidden md:block">
+                    <div className="w-full md:w-[28%] hidden md:block">
                         <div className="sticky top-0">
                             <Link
                             href="/"
@@ -260,6 +287,48 @@ const IndexPage: React.FC = () => {
                                 className="h-min w-min"
                             />
                             </Link>
+
+                            <Coupons
+                            title="Featured Coupons & Discounts"
+                            items={[
+                                {
+                                img: "/coupons/1.png",
+                                sub: "$500 OFF",
+                                title: "1408 Redemptions",
+                                },
+                                {
+                                img: "/coupons/2.png",
+                                sub: "$300 OFF",
+                                title: "1080 Redemptions",
+                                },
+                                {
+                                img: "/coupons/3.png",
+                                sub: "10% OFF",
+                                title: "758 Redemptions",
+                                },
+                                {
+                                img: "/coupons/4.png",
+                                sub: "Buy 1 Get 1 Free",
+                                title: "950 Redemptions",
+                                },
+                                {
+                                img: "/coupons/5.png",
+                                sub: "$100 OFF",
+                                title: "600 Redemptions",
+                                },
+                                {
+                                img: "/coupons/6.png",
+                                sub: "20% OFF",
+                                title: "1200 Redemptions",
+                                },
+                                {
+                                img: "/coupons/7.png",
+                                sub: "Free Shipping",
+                                title: "1100 Redemptions",
+                                },
+                            ]}
+                            />
+
                             <Link
                             href="/"
                             className="bg-white p-2 shadow border block"

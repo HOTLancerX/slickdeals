@@ -14,7 +14,7 @@ const Coupons: React.FC<CouponsProps> = ({ title, items }) => {
   return (
     <div className="mb-2">
         {title &&
-            <h2 className="text-md font-bold p-2 mt-2 bg-white">{title}</h2>
+            <h2 className="text-sm p-2 mt-2 bg-white">{title}</h2>
         }
         <div className="flex flex-col items-center gap-2 mt-2">
             {items.map((item, index) => (
