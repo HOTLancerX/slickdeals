@@ -80,7 +80,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                   <Link
                     href="/"
                   >
-                    Slickdeals Live
+                    JQDeals Live
                   </Link>
                   <Link
                     href="/"
@@ -90,7 +90,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                   <Link
                     href="/"
                   >
-                    Slickdeals Cashback Rewards
+                    JQDeals Cashback Rewards
                   </Link>
                 </div>
                 <div className="flex flex-col space-y-1 text-sm font-normal">
