@@ -2,6 +2,8 @@ import Carousel from "@/components/Carousel";
 import Rating from "@/components/Rating";
 import Stores from "@/components/Stores";
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Buy Smartphones in @Price in Kenya",
@@ -9,8 +11,37 @@ export const metadata: Metadata = {
 };
 
 const IndexPage: React.FC = () => {
+  const items = [
+    { img: '/icon/1.svg', title: "Auto Electronic Accessories", link: '/' },
+    { img: '/icon/2.svg', title: "Auto Parts & Supplies", link: '/' },
+    { img: '/icon/3.svg', title: "Automotive Tools", link: '/' },
+    { img: '/icon/4.svg', title: "Gas", link: '/' },
+    { img: '/icon/5.svg', title: "Wheels & Tires", link: '/' },
+    { img: '/icon/6.svg', title: "Motor Oil", link: '/' },
+    { img: '/icon/7.svg', title: "Motorcycle Gear & Accessories", link: '/' },
+  ];
     return (
         <>
+          <div className="container my-4">
+            <div className="flex overflow-x-auto no-ber gap-2">
+              {items.map((item, index) => (
+                  <Link href={item.link} key={index} className='w-40 flex-none'>
+                      <div className="flex space-y-2 flex-col items-center">
+                        <div className="bg-secondary text-white p-4 rounded-full">
+                          <Image
+                              src={item.img}
+                              width={40}
+                              height={40}
+                              alt={item.title}
+                              className="block"
+                          />
+                        </div>
+                          <span className="text-xs md:text-sm leading-none text-main font-medium text-center">{item.title}</span>
+                      </div>
+                  </Link>
+              ))}
+            </div>
+          </div>
           <div className="container my-4">
                 <div className="flex flex-col md:flex-row gap-3">
                     <div className="w-full md:w-1/5">

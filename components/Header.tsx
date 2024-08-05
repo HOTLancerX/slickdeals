@@ -148,17 +148,17 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                   </svg>
                 </h4>
               </div>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Tool Deals</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Tech Deals</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Video Games</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Laptops &amp; Computers</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Credit Card Offers</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Best Savings Accounts</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Sneaker Deals</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Home Deals</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Grocery Deals</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Toy Deals</Link>
-              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/">Clothing Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Tool Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Tech Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Video Games</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Laptops &amp; Computers</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Credit Card Offers</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Best Savings Accounts</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Sneaker Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Home Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Grocery Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Toy Deals</Link>
+              <Link className="flex-none p-2 text-nowrap whitespace-nowrap text-xs md:text-sm leading-none font-medium" href="/cat/apple">Clothing Deals</Link>
             </div>
           </div>
         </div>
