@@ -109,7 +109,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                   style={{ flex: `0 0 ${itemWidth}%` }}
                 >
                   <div className='block border p-2 shadow bg-white rounded-md'>
-                    <div className='pb-2 mb-2 border-b flex items-center'>
+                    <div className='pb-2 mb-2 border-b hidden md:flex items-center'>
                       <Image
                         src="/user/1.jpg"
                         width={30}
@@ -128,7 +128,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                       </div>
                     </div>
                     <Link href={item.link}>
-                      <div className='flex items-center justify-center relative h-44 md:h-52'>
+                      <div className='flex items-center justify-center relative h-20 md:h-48'>
                         <Image
                           src={item.img}
                           width={600}
@@ -138,7 +138,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                         />
                       </div>
                       <div className="mt-1 flex flex-col items-start space-y-1">
-                        <h3 className="text-md line-clamp-3">
+                        <h3 className="text-md md:line-clamp-3 line-clamp-2">
                           {item.title}
                         </h3>
                         <div className='flex items-center space-x-2 my-2'>
@@ -187,7 +187,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
             <div className={`grid grid-cols-1 md:grid-cols-${desktops} gap-3`}>
               {items.slice(0, limit).map((item, index) => (
                 <div key={index} className='border bg-white p-1 rounded-md'>
-                  <div className='pb-2 border-b flex items-center'>
+                  <div className='pb-2 border-b hidden md:flex items-center'>
                     <Image
                       src="/user/1.jpg"
                       width={30}
@@ -205,8 +205,8 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                       </p>
                     </div>
                   </div>
-                  <Link href={item.link} className="flex flex-row md:flex-col">
-                    <div className='w-1/3 md:w-full flex items-center justify-center relative h-28 md:h-60'>
+                  <Link href={item.link} className="flex flex-row md:flex-col items-center">
+                    <div className='w-1/3 md:w-full flex items-center justify-center relative h-24 md:h-48'>
                       <Image
                         src={item.img}
                         width={600}
@@ -224,9 +224,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                       <p>
                         Amazon
                       </p>
-                    </div>
-                  </Link>
-                  <div className='flex items-center justify-between border-t pt-1 mt-2'>
+                      <div className='flex w-full items-center justify-between border-t pt-1 mt-2'>
                     <Link
                       href="/"
                       className='text-sm text-gray-400 flex space-x-1 items-center'
@@ -254,6 +252,10 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                       </svg>
                     </Link>
                   </div>
+                    </div>
+                    
+                  </Link>
+                  
                 </div>
               ))}
             </div>
