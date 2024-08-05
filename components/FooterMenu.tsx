@@ -28,7 +28,7 @@ const FooterMenu = ({ items }: { items: { icon: JSX.Element; title: string; link
                             className="flex flex-col items-center space-y py-1"
                         >
                             {item.icon}
-                            <span>{item.title}</span>
+                            <span className='text-center text-nowrap whitespace-nowrap'>{item.title}</span>
                         </Link>
                     ))}
                 </div>
