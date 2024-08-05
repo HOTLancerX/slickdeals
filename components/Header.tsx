@@ -54,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
               </div>
               <div className='flex items-center justify-end space-x-1 md:w-1/3'>
                 <Link
-                  href="/"
+                  href="/coupons/1"
                   className='hidden md:flex flex-col items-center px-2 text-white'
                 >
                   <span className='bg-red-700 rounded-full p-2'>
@@ -62,7 +62,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                       <path fill="currentColor" d="M21 19v1H3v-1l2-2v-6c0-3.1 2.03-5.83 5-6.71V4a2 2 0 0 1 2-2a2 2 0 0 1 2 2v.29c2.97.88 5 3.61 5 6.71v6zm-7 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2" />
                     </svg>
                   </span>
-                  <p className='text-xs mt-1'>Deal Alerts</p>
+                  <p className='text-xs mt-1'>Coupons</p>
                 </Link>
                 
                 <Link
