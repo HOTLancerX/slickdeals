@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
       <div>
         <div className='bg-black text-center text-gray-200 text-xs hidden md:block py-1'>
           <i>
-          Slickdeals is community-supported. 
+          JQDeals is community-supported. 
           We may get paid by brands or deals, including promoted items.
           </i>
         </div>

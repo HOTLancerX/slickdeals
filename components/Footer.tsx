@@ -180,7 +180,7 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                 />
               </Link>
               <div>
-              Copyright © 2024 SlickDeals. All rights reserved.
+              Copyright © 2024 JQDeals. All rights reserved.
               </div>              
             </div>
           </div>

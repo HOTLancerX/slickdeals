@@ -120,7 +120,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                       <div className='text-xs'>
                         <h1>
                           <span className='font-light mr-1'>found by</span>
-                          HeRa Khan
+                          JQDeals
                         </h1>
                         <p>
                         43 minutes ago
@@ -198,7 +198,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                     <div className='text-xs'>
                       <h1>
                         <span className='font-light mr-1'>found by</span>
-                        HeRa Khan
+                        JQDeals
                       </h1>
                       <p>
                       43 minutes ago
