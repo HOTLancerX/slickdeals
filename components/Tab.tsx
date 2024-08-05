@@ -39,7 +39,7 @@ const Tab: React.FC<TabProps> = ({ items }) => {
                 Shop Now 
             </Link>
         </div>
-      <div className="grid grid-cols-3 border-y w-full bg-white">
+      <div className="grid grid-cols-4 border-y w-full bg-white">
         {items.map((item, index) => (
           <button
             key={index}
