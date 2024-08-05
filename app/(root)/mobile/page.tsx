@@ -12,7 +12,7 @@ const IndexPage: React.FC = () => {
                             SAVING HAS NEVER BEEN EASIER
                             </h1>
                             <h2 className="text-2xl font-normal mb-3">
-                            Download our official Slickdeals app
+                            Download our official JQDeals app
                             </h2>
                         </div>
                         <div className="flex items-center justify-center">
