@@ -227,7 +227,7 @@ const IndexPage: React.FC = () => {
               />
             </div>
             <div className="w-full md:w-3/12 hidden md:block">
-              <div className="sticky top-0">
+              <div className="sticky top-0 mt-4">
                 <Link
                   href="/"
                   className="bg-white p-2 shadow border block"
