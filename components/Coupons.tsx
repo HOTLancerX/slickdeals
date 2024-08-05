@@ -28,7 +28,7 @@ const Coupons: React.FC<CouponsProps> = ({ title, items }) => {
                     <div className="pl-2 text-xs w-2/3">
                         <p className="text-red-500">{item.sub}</p>
                         <h1 className="line-clamp-2">
-                            Take Up to 50% Off Women\'s Boots, Loafers, and More
+                            Take Up to 50% Off Women Boots, Loafers, and More
                         </h1>
                         <p>{item.title}</p>
                     </div>
