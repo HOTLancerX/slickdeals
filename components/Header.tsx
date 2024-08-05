@@ -26,16 +26,16 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                 className='w-2/12 flex items-center'
               >
                 <Image
-                  src="/icon.svg"
+                  src="/icon.png"
                   width={50}
                   height={50}
                   alt='logo'
-                  className='pr-1'
+                  className='pr-1 md:hidden'
                 />
                 <Image
-                  src="/logo.svg"
-                  width={150}
-                  height={45}
+                  src="/logo.png"
+                  width={200}
+                  height={60}
                   alt='logo'
                   className='hidden md:block'
                 />

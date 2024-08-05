@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+::-webkit-scrollbar:horizontal {height: 5px;}
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-thumb {background: #149777; }
+
 .no-ber::-webkit-scrollbar {display: none;}
 @media (min-width:768px){
     .md\:grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}

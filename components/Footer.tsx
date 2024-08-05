@@ -165,18 +165,18 @@ const Footer: React.FC<FooterProps> = ({ menu }) => {
                 className='flex items-center mb-2 md:mb-0'
               >
                 <Image
-                  src="/icon.svg"
+                  src="/icon.png"
                   width={50}
                   height={50}
                   alt='logo'
-                  className='pr-1'
+                  className='pr-1 md:hidden'
                 />
                 <Image
-                  src="/logo.svg"
-                  width={150}
-                  height={45}
+                  src="/logo.png"
+                  width={200}
+                  height={60}
                   alt='logo'
-                  className=''
+                  className='hidden md:block'
                 />
               </Link>
               <div>
