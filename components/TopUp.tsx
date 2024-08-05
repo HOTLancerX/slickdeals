@@ -57,9 +57,9 @@ const TopUp: React.FC = () => {
         )}
       </div>
       <Link
-        href="https://wa.me/8801781077094"
+        href="https://wa.me/"
         target='_blank'
-        className='fixed right-6 bottom-14 z-50 md:bottom-6'
+        className='fixed right-6 bottom-16 z-50 md:bottom-6'
       >
         <div className='relative'>
           <span className="animate-ping left-1 top-2 z-0 absolute inline-flex h-5 w-5 rounded-full bg-green-500 opacity-75"></span>

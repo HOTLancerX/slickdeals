@@ -64,6 +64,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                   </span>
                   <p className='text-xs mt-1'>Deal Alerts</p>
                 </Link>
+                
                 <Link
                   href="/post-a-deal"
                   className='hidden md:flex flex-col items-center px-2 text-white'

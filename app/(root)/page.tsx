@@ -104,7 +104,7 @@ const IndexPage: React.FC = () => {
 
               <Link
                 href="/"
-                className="bg-white p-2 shadow border block"
+                className="bg-white p-1 md:p-2 shadow border block"
               >
                 <Image
                   src="/ads/720.png"
@@ -251,8 +251,7 @@ const IndexPage: React.FC = () => {
                     className="h-min w-min"
                   />
                 </Link>
-              </div>
-              
+              </div>              
             </div>
           </div>
         </div>

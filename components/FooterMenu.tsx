@@ -20,7 +20,7 @@ const FooterMenu = ({ items }: { items: { icon: JSX.Element; title: string; link
     return (
         <div className='md:hidden'>
             <div className={`fixed bottom-0 z-50 w-full bg-main/70 text-xs text-white shadow-inner transition-transform duration-300 ${visible ? 'translate-y-0' : 'translate-y-full'}`}>
-                <div className="grid grid-cols-6 gap-2 items-center">
+                <div className="grid grid-cols-5 gap-1 items-center">
                     {items.map((item, index) => (
                         <Link
                             key={index}
