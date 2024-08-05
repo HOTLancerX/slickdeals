@@ -41,19 +41,20 @@ const Coupon: React.FC<CouponProps> = ({ items }) => {
   };
 
   return (
-    <div className="p-4">
-      <div className="grid grid-cols-1 gap-4">
+    <div>
+      <div className="flex flex-col gap-2">
         {items.map((item, index) => (
           <div
             key={index}
-            className="border p-4 rounded-lg shadow-lg flex flex-col justify-between"
+            className="border flex items-center justify-between w-full p-2 bg-white"
           >
-            <img src={item.img} alt={item.name} className="h-32 w-full object-cover" />
-            <div className="mt-4">
-              <h3 className="text-xl font-bold">{item.name}</h3>
-              <p className="text-gray-600">{item.type}</p>
-              <p className="mt-2">{item.title}</p>
-              <div className="flex justify-between items-center mt-2">
+            <div className="md:w-40 w-20 text-center">
+              <h3 className="font-bold text-sm md:text-xl">{item.name}</h3>
+              <p className="bg-secondary/20 rounded-md inline-flex px-2 text-xs font-light">{item.type}</p>
+            </div>
+            <div className="w-full">
+              <h1 className="font-bold text-xs md:text-lg">{item.title}</h1>
+              <div className="flex items-center space-x-2 text-xs">
                 <span
                   className={`${
                     item.verified ? "text-green-600" : "text-red-600"
@@ -64,12 +65,19 @@ const Coupon: React.FC<CouponProps> = ({ items }) => {
                 <span className="text-gray-500">{item.note}</span>
               </div>
             </div>
+            <div className="md:w-1/4 w-8">
             <button
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+              className="md:px-4 py-2 bg-secondary block w-full text-white rounded-lg"
               onClick={() => handleButtonClick(item)}
             >
-              {item.type === "sele" ? "Get Offer" : "Get Coupon Code"}
+              <svg className="md:hidden" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16">
+                <path fill="currentColor" d="m5.157 13.069l4.611-4.685a.546.546 0 0 0 0-.768L5.158 2.93a.55.55 0 0 1 0-.771a.53.53 0 0 1 .759 0l4.61 4.684a1.65 1.65 0 0 1 0 2.312l-4.61 4.684a.53.53 0 0 1-.76 0a.55.55 0 0 1 0-.771" />
+              </svg>
+              <span className="hidden md:block text-nowrap whitespace-nowrap">
+                {item.type === "sele" ? "Get Offer" : "Get Coupon Code"}
+              </span>
             </button>
+            </div>
           </div>
         ))}
       </div>
@@ -86,7 +94,7 @@ const Coupon: React.FC<CouponProps> = ({ items }) => {
             <img
               src={selectedCoupon.img}
               alt={selectedCoupon.name}
-              className="h-40 w-full object-cover mb-4"
+              className="h-20 w-min mx-auto mb-4"
             />
             <h2 className="text-2xl font-bold mb-2">{selectedCoupon.title}</h2>
 
