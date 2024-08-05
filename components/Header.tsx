@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                   className='hidden md:block'
                 />
               </Link>
-              <div className='flex h-12 max-w-xl md:my-0 md:mx-4 items-center bg-[#555555] rounded md:rounded-full w-full px-2'>
+              <div className='flex md:h-12 h-10 max-w-xl md:my-0 md:mx-4 items-center bg-[#555555] rounded md:rounded-full w-full px-2'>
                 <input
                   type="text"
                   placeholder="Search..."
