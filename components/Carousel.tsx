@@ -153,32 +153,29 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                       </div>
                     </Link>
                     <div className='flex items-center justify-between border-t pt-1 mt-2'>
-                      <Link
-                        href="/"
+                      <div
                         className='text-sm text-gray-400 flex space-x-1 items-center'
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                           <path fill="currentColor" d="M23 10a2 2 0 0 0-2-2h-6.32l.96-4.57c.02-.1.03-.21.03-.32c0-.41-.17-.79-.44-1.06L14.17 1L7.59 7.58C7.22 7.95 7 8.45 7 9v10a2 2 0 0 0 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73zM1 21h4V9H1z" />
                         </svg>
                         <p>100</p>
-                      </Link>
-                      <Link
-                        href="/"
+                      </div>
+                      <div
                         className='text-sm text-gray-400 flex space-x-1 items-center'
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                           <path fill="currentColor" d="M6 14h12v-2H6zm0-3h12V9H6zm0-3h12V6H6zM4 18q-.825 0-1.412-.587T2 16V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v18l-4-4z" />
                         </svg>
                         <p>100</p>
-                      </Link>
-                      <Link
-                        href="/"
+                      </div>
+                      <div
                         className='text-sm text-gray-400 flex space-x-1 items-center'
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                           <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z" />
                         </svg>
-                      </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -227,32 +224,29 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
                         Amazon
                       </p>
                       <div className='flex w-full items-center justify-between border-t pt-1 mt-2'>
-                    <Link
-                      href="/"
+                    <div
                       className='text-sm text-gray-400 flex space-x-1 items-center'
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M23 10a2 2 0 0 0-2-2h-6.32l.96-4.57c.02-.1.03-.21.03-.32c0-.41-.17-.79-.44-1.06L14.17 1L7.59 7.58C7.22 7.95 7 8.45 7 9v10a2 2 0 0 0 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73zM1 21h4V9H1z" />
                       </svg>
                       <p>100</p>
-                    </Link>
-                    <Link
-                      href="/"
+                    </div>
+                    <div
                       className='text-sm text-gray-400 flex space-x-1 items-center'
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M6 14h12v-2H6zm0-3h12V9H6zm0-3h12V6H6zM4 18q-.825 0-1.412-.587T2 16V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v18l-4-4z" />
                       </svg>
                       <p>100</p>
-                    </Link>
-                    <Link
-                      href="/"
+                    </div>
+                    <div
                       className='text-sm text-gray-400 flex space-x-1 items-center'
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z" />
                       </svg>
-                    </Link>
+                    </div>
                   </div>
                     </div>
                     

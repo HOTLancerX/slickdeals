@@ -16,30 +16,30 @@ const Tab: React.FC<TabProps> = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full md:hidden">
-        <div className="flex items-center justify-between bg-white p-2">
-            <Image
-                src="/mp.png"
-                width={85}
-                height={40}
-                alt=""
-            />
-            <div className="text-center text-xs">
-                <h1 className=" text-secondary font-bold">
-                Back to School Deals
-                </h1>
-                <p>
-                This August
-                </p>
-            </div>
-            <Link
-                href="/"
-                className="border p-2 leading-none text-xs"
-            >
-                Shop Now 
-            </Link>
-        </div>
-      <div className="grid grid-cols-4 border-y w-full bg-white">
+    <div className="container">
+      <div className="md:hidden flex items-center justify-between bg-white p-2">
+          <Image
+              src="/mp.png"
+              width={85}
+              height={40}
+              alt=""
+          />
+          <div className="text-center text-xs">
+              <h1 className=" text-secondary font-bold">
+              Back to School Deals
+              </h1>
+              <p>
+              This August
+              </p>
+          </div>
+          <Link
+              href="/"
+              className="border p-2 leading-none text-xs"
+          >
+              Shop Now 
+          </Link>
+      </div>
+      <div className="md:hidden grid grid-cols-4 border-y w-full bg-white">
         {items.map((item, index) => (
           <button
             key={index}
@@ -54,7 +54,9 @@ const Tab: React.FC<TabProps> = ({ items }) => {
           </button>
         ))}
       </div>
-      <div className="p-2 pt-0">{items[activeIndex].info}</div>
+      <div>
+        {items[activeIndex].info}
+      </div>
     </div>
   );
 };

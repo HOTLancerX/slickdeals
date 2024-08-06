@@ -42,11 +42,11 @@ const Coupon: React.FC<CouponProps> = ({ items }) => {
 
   return (
     <div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
         {items.map((item, index) => (
           <div
             key={index}
-            className="border flex items-center justify-between w-full p-2 bg-white"
+            className="border flex items-center justify-between w-full p-2 bg-white mb-2"
           >
             <div className="md:w-40 w-20 text-center">
               <h3 className="font-bold text-sm md:text-xl">{item.name}</h3>
