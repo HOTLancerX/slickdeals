@@ -256,40 +256,40 @@ const IndexPage: React.FC = () => {
                                     </ul>
                                     </li>
                                     <li>
-                                    <Link href="/mens/">Men's Clothing &amp; Accessories</Link>
+                                    <Link href="/mens/">Mens Clothing &amp; Accessories</Link>
                                     <ul className="list-disc ml-8">
                                         <li>
                                         <Link href="/big-tall/">Big &amp; Tall</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-accessories/">Men's Accessories</Link>
+                                        <Link href="/mens-accessories/">Mens Accessories</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-athletic-wear/">Men's Activewear</Link>
+                                        <Link href="/mens-athletic-wear/">Mens Activewear</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-apparel/">Men's Apparel</Link>
+                                        <Link href="/mens-apparel/">Mens Apparel</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-jeans/">Men's Jeans</Link>
+                                        <Link href="/mens-jeans/">Mens Jeans</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-outerwear/">Men's Outerwear</Link>
+                                        <Link href="/mens-outerwear/">Mens Outerwear</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-pajamas/">Men's Pajamas &amp; Loungewear</Link>
+                                        <Link href="/mens-pajamas/">Mens Pajamas &amp; Loungewear</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-pants/">Men's Pants &amp; Shorts</Link>
+                                        <Link href="/mens-pants/">Mens Pants &amp; Shorts</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-shirt/">Men's Shirts</Link>
+                                        <Link href="/mens-shirt/">Mens Shirts</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-underwear/">Men's Underwear &amp; Socks</Link>
+                                        <Link href="/mens-underwear/">Mens Underwear &amp; Socks</Link>
                                         </li>
                                         <li>
-                                        <Link href="/young-mens/">Young Men's</Link>
+                                        <Link href="/young-mens/">Young Mens</Link>
                                         </li>
                                     </ul>
                                     </li>
@@ -306,13 +306,13 @@ const IndexPage: React.FC = () => {
                                         <Link href="/boots/">Boots</Link>
                                         </li>
                                         <li>
-                                        <Link href="/mens-shoes/">Men's Shoes</Link>
+                                        <Link href="/mens-shoes/">Mens Shoes</Link>
                                         </li>
                                         <li>
                                         <Link href="/sandals/">Sandals</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-shoes/">Women's Shoes</Link>
+                                        <Link href="/womens-shoes/">Womens Shoes</Link>
                                         </li>
                                     </ul>
                                     </li>
@@ -323,15 +323,15 @@ const IndexPage: React.FC = () => {
                                     <Link href="/watches/">Watches</Link>
                                     <ul className="list-disc ml-8">
                                         <li>
-                                        <Link href="/mens-watch/">Men's Watches</Link>
+                                        <Link href="/mens-watch/">Mens Watches</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-watch/">Women's Watches</Link>
+                                        <Link href="/womens-watch/">Womens Watches</Link>
                                         </li>
                                     </ul>
                                     </li>
                                     <li>
-                                    <Link href="/womens/">Women's Clothing &amp; Accessories</Link>
+                                    <Link href="/womens/">Womens Clothing &amp; Accessories</Link>
                                     <ul className="list-disc ml-8">
                                         <li>
                                         <Link href="/designer-brands/">Designer Brands</Link>
@@ -349,31 +349,31 @@ const IndexPage: React.FC = () => {
                                         <Link href="/plus-size/">Plus Size Clothing</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-accessories/">Women's Accessories</Link>
+                                        <Link href="/womens-accessories/">Womens Accessories</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-activewear/">Women's Activewear</Link>
+                                        <Link href="/womens-activewear/">Womens Activewear</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-apparel/">Women's Apparel</Link>
+                                        <Link href="/womens-apparel/">Womens Apparel</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-dresses/">Women's Dresses &amp; Skirts</Link>
+                                        <Link href="/womens-dresses/">Womens Dresses &amp; Skirts</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-outerwear/">Women's Outerwear</Link>
+                                        <Link href="/womens-outerwear/">Womens Outerwear</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-pajamas/">Women's Pajamas &amp; Loungewear</Link>
+                                        <Link href="/womens-pajamas/">Womens Pajamas &amp; Loungewear</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-pants/">Women's Pants &amp; Shorts</Link>
+                                        <Link href="/womens-pants/">Womens Pants &amp; Shorts</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-shirts/">Women's Shirts</Link>
+                                        <Link href="/womens-shirts/">Womens Shirts</Link>
                                         </li>
                                         <li>
-                                        <Link href="/womens-lingerie/">Women's Underwear &amp; Socks</Link>
+                                        <Link href="/womens-lingerie/">Womens Underwear &amp; Socks</Link>
                                         </li>
                                     </ul>
                                     </li>
