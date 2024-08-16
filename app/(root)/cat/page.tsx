@@ -432,7 +432,7 @@ const IndexPage: React.FC = () => {
                                         <Link href="/drives/">Hard Drives</Link>
                                         <ul className="list-disc ml-8">
                                             <li>
-                                            <Link href="/3.5-inch/">3.5" Hard Drives</Link>
+                                            <Link href="/">3.5 Hard Drives</Link>
                                             </li>
                                             <li>
                                             <Link href="/external-drive/">External Hard Drives</Link>
