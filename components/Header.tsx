@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
         </div>
         <div className="bg-main bg-bg bg-cover bg-repeat sticky z-50 top-0">
           <div className="container">
-            <div className="flex md:items-center flex-row w-full py-2">
+            <div className="flex md:items-center flex-row w-full py-0">
               <Link
                 href="/"
                 className='w-2/12 flex items-center'
@@ -54,11 +54,11 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
               </div>
               <div className='flex items-center justify-end space-x-1 md:w-1/3'>
                 <Link
-                  href="/coupons/1"
+                  href="/coupons"
                   className='hidden md:flex flex-col items-center px-2 text-white'
                 >
                   <span className='bg-red-700 rounded-full p-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M21 19v1H3v-1l2-2v-6c0-3.1 2.03-5.83 5-6.71V4a2 2 0 0 1 2-2a2 2 0 0 1 2 2v.29c2.97.88 5 3.61 5 6.71v6zm-7 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2" />
                     </svg>
                   </span>
@@ -70,7 +70,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                   className='hidden md:flex flex-col items-center px-2 text-white'
                 >
                   <span className='bg-secondary rounded-full p-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z" />
                     </svg>
                   </span>
@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                   className='hidden md:flex flex-col items-center px-2 text-white'
                 >
                   <span className='bg-yellow-500 rounded-full p-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36 36">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 36 36">
                       <path fill="currentColor" d="M25 4H11a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-6 26h-2v-2h2Zm-8-4V6h14v20Z" />
                       <path fill="none" d="M0 0h36v36H0z" />
                     </svg>
@@ -92,7 +92,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                   title={
                     <div className="flex flex-col items-center px-2 text-white">
                       <span className='bg-red-600 rounded-full p-2'>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256">
                         <path fill="currentColor" d="M229.19 213c-15.81-27.32-40.63-46.49-69.47-54.62a70 70 0 1 0-63.44 0C67.44 166.5 42.62 185.67 26.81 213a6 6 0 1 0 10.38 6c19.21-33.19 53.15-53 90.81-53s71.6 19.81 90.81 53a6 6 0 1 0 10.38-6M70 96a58 58 0 1 1 58 58a58.07 58.07 0 0 1-58-58" />
                       </svg>
                       </span>
@@ -112,14 +112,6 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                       <Link href="/dashboard" className="flex items-center p-2 hover:bg-gray-200">
                         <svg stroke="currentColor" className='mr-2' fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                         My Account
-                      </Link>
-                      <Link href="/dashboard/orders" className="flex items-center p-2 hover:bg-gray-200">
-                        <svg className='mr-2' stroke="currentColor" stroke-width="0" viewBox="0 0 16 16" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M2.95.4a1 1 0 0 1 .8-.4h8.5a1 1 0 0 1 .8.4l2.85 3.8a.5.5 0 0 1 .1.3V15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4.5a.5.5 0 0 1 .1-.3zM7.5 1H3.75L1.5 4h6zm1 0v3h6l-2.25-3zM15 5H1v10h14z"></path></svg>
-                        Orders
-                      </Link>
-                      <Link href="/dashboard/wishlist" className="flex items-center p-2 hover:bg-gray-200">
-                        <svg stroke="currentColor" className='mr-2' fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><g id="Heart"><path d="M12,20.043a.977.977,0,0,1-.7-.288L4.63,13.08A5.343,5.343,0,0,1,6.053,4.513,5.266,5.266,0,0,1,12,5.371a5.272,5.272,0,0,1,5.947-.858A5.343,5.343,0,0,1,19.37,13.08l-6.676,6.675A.977.977,0,0,1,12,20.043ZM8.355,4.963A4.015,4.015,0,0,0,6.511,5.4,4.4,4.4,0,0,0,4.122,8.643a4.345,4.345,0,0,0,1.215,3.73l6.675,6.675,6.651-6.675a4.345,4.345,0,0,0,1.215-3.73A4.4,4.4,0,0,0,17.489,5.4a4.338,4.338,0,0,0-4.968.852h0a.744.744,0,0,1-1.042,0A4.474,4.474,0,0,0,8.355,4.963Z"></path></g></svg>
-                        Saved Items
                       </Link>
                       <div className='p-3 border-t'>
                         <Link

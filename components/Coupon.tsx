@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface CouponItem {
@@ -49,11 +51,11 @@ const Coupon: React.FC<CouponProps> = ({ items }) => {
             className="border flex items-center justify-between w-full p-2 bg-white mb-2"
           >
             <div className="md:w-40 w-20 text-center">
-              <h3 className="font-bold text-sm md:text-xl">{item.name}</h3>
+              <h3 className="font-bold text-sm md:text-base">{item.name}</h3>
               <p className="bg-secondary/20 rounded-md inline-flex px-2 text-xs font-light">{item.type}</p>
             </div>
             <div className="w-full">
-              <h1 className="font-bold text-xs md:text-lg">{item.title}</h1>
+              <h1 onClick={() => handleButtonClick(item)} className="font-bold text-xs md:text-lg">{item.title}</h1>
               <div className="flex items-center space-x-2 text-xs">
                 <span
                   className={`${
@@ -91,39 +93,41 @@ const Coupon: React.FC<CouponProps> = ({ items }) => {
             >
               &times;
             </button>
-            <img
+            <Image
               src={selectedCoupon.img}
+              width={300}
+              height={300}
               alt={selectedCoupon.name}
               className="h-20 w-min mx-auto mb-4"
             />
-            <h2 className="text-2xl font-bold mb-2">{selectedCoupon.title}</h2>
+            <h2 className="text-2xl font-bold text-center mb-2">{selectedCoupon.title}</h2>
 
             {selectedCoupon.type === "sele" && selectedCoupon.link && (
-              <a
+              <Link
                 href={selectedCoupon.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg text-center"
               >
                 Visit Store
-              </a>
+              </Link>
             )}
 
             {selectedCoupon.type === "coupon" && (
-              <div className="flex items-center mt-4">
-                <span className="px-4 py-2 border rounded-lg text-lg font-mono">
+              <div className="flex items-center justify-center mt-4">
+                <span className="px-4 py-2 border text-md font-mono">
                   {selectedCoupon.code}
                 </span>
                 <button
                   onClick={handleCopyCode}
-                  className="ml-4 px-4 py-2 bg-green-500 text-white rounded-lg"
+                  className="px-4 py-2 bg-secondary border text-white"
                 >
                   Copy Code
                 </button>
               </div>
             )}
             {copyMessage && (
-              <p className="text-green-600 mt-2">{copyMessage}</p>
+              <p className="text-main flex justify-center mx-auto mt-2">{copyMessage}</p>
             )}
           </div>
         </div>
