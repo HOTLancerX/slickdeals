@@ -107,10 +107,10 @@ const Carousel: React.FC<CarouselProps> = ({ items, title, img, link, left, desk
               {displayedItems.slice(0, limit).map((item, index) => (
                 <div
                   key={index}
-                  className="transition-opacity duration-500 pr-2"
+                  className="transition-opacity duration-500 h-full pr-2"
                   style={{ flex: `0 0 ${itemWidth}%` }}
                 >
-                  <div className='block border p-2 shadow bg-white rounded-md'>
+                  <div className='block border p-2 shadow h-full bg-white rounded-md'>
                     <div className='pb-2 mb-2 border-b hidden md:flex items-center'>
                       <Image
                         src="/user/1.jpg"
