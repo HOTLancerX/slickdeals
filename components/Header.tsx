@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
         </div>
         <div className="bg-main bg-bg bg-cover bg-repeat sticky z-50 top-0">
           <div className="container">
-            <div className="flex md:items-center flex-row w-full py-0">
+            <div className="flex md:items-center flex-row w-full py-2">
               <Link
                 href="/"
                 className='w-2/12 flex items-center'
