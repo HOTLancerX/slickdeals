@@ -109,7 +109,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
                           Sign In
                         </Link>
                       </div>
-                      <Link href="/dashboard" className="flex items-center p-2 hover:bg-gray-200">
+                      <Link href="/account" className="flex items-center p-2 hover:bg-gray-200">
                         <svg stroke="currentColor" className='mr-2' fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                         My Account
                       </Link>
