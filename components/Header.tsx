@@ -129,7 +129,7 @@ const Header: React.FC<HeaderProps> = ({ menu }) => {
           </div>
         </div>
         {menu === 1 && (
-        <div className="bg-white hidden md:block">
+        <div className="bg-white border-b hidden md:block">
           <div className="container">
             <div className='flex space-x-4 items-center overflow-x-auto no-ber text-secondary text-sm font-semibold'>
               <div className='flex-none'>

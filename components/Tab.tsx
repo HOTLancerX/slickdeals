@@ -17,6 +17,19 @@ const Tab: React.FC<TabProps> = ({ items }) => {
 
   return (
     <div className="container">
+      <div className="hidden md:block bg-white p-2">
+          <Link
+            href="/"
+          >
+            <Image
+              src="/12.jpg"
+              width={720}
+              height={90}
+              alt=""
+              className="mx-auto"
+          />
+          </Link>
+      </div>
       <div className="md:hidden flex items-center justify-between bg-white p-2">
           <Image
               src="/mp.png"
