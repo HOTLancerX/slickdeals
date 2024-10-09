@@ -2,6 +2,7 @@ import Carousel from "@/components/Carousel";
 import Coupons from "@/components/Coupons";
 import ReadMore from "@/components/ReadMore";
 import Sliders from "@/components/Sliders";
+import Specifications from "@/components/Specifications";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -79,71 +80,9 @@ const IndexPage: React.FC = () => {
 
             <div className="container my-4">
                 <div className="flex flex-col md:flex-row gap-4">
-                    <div className="w-full md:w-[72%]">
-                        <div className="bg-white p-2 border-t-[6px] rounded-t-md border-secondary">
-                            <h1 className="bg-secondary text-white inline-flex text-sm px-2 rounded-md">
-                            Forum Thread
-                            </h1>
-                        </div>
-                        <div className="bg-white p-2 border-y">
-                            <h1 className="text-xl font-bold">
-                            Ace Hardware Stores: 5-Gallon Bucket + 20% Off Select Items Fitting in Bucket
-                            </h1>
-                        </div>
-                        <div className="flex flex-col-reverse md:flex-row bg-white gap-4">
-                            <div className="w-full md:w-1/2">
-                                
-                                <div className="flex items-center space-x-2 text-xl p-2">
-                                    <h1 className=" font-bold">
-                                        $100
-                                    </h1>
-                                    <del className="text-red-500">$150</del>
-                                    <p className="font-normal text-gray-500 text-sm">
-                                    + Free Shipping
-                                    </p>
-                                </div>
-                                <div className="p-2">
-                                    <h1 className="text-xs md:text-sm font-bold pb-2">
-                                        Short description
-                                    </h1>
-                                    <ul className="list-disc ml-8">
-                                        <li>
-                                            Be involved in every step of the product design cycle from discovery to
-                                            developer handoff and user acceptance testing.
-                                        </li>
-                                        <li>
-                                            Work with BAs, product managers and tech teams to lead the Product
-                                            Design
-                                        </li>
-                                        <li>
-                                            Maintain quality of the design process and ensure that when designs are
-                                            translated into code they accurately reflect the design specifications.
-                                        </li>
-                                        <li>
-                                            Accurately estimate design tickets during planning sessions.
-                                        </li>
-                                        <li>
-                                            Contribute to sketching sessions involving non-designersCreate, iterate
-                                            and maintain UI deliverables including sketch files, style guides, high
-                                            fidelity prototypes, micro interaction specifications and pattern
-                                            libraries.
-                                        </li>
-                                        <li>
-                                            Ensure design choices are data led by identifying assumptions to test
-                                            each sprint, and work with the analysts in your team to plan moderated
-                                            usability test sessions.
-                                        </li>
-                                        <li>
-                                            Design pixel perfect responsive UI’s and understand that adopting common
-                                            interface patterns is better for UX than reinventing the wheel
-                                        </li>
-                                        <li>
-                                            Present your work to the wider business at Show &amp; Tell sessions.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="w-full md:w-1/2 p-2">
+                    <div className="w-full md:w-[75%]">
+                        <div className="flex flex-col md:items-center md:flex-row bg-white gap-4">
+                            <div className="w-full md:w-[40%] p-2">
                                 <Sliders
                                     slides={[
                                         {
@@ -183,13 +122,103 @@ const IndexPage: React.FC = () => {
                                         },
                                     ]}
                                 />
+                            </div>
+                            <div className="w-full md:w-[60%] p-2 md:p-4">
+                                <h1 className="text-xl md:text-3xl font-light line-clamp-3">
+                                Ace Hardware Stores: 5-Gallon Bucket + 20% Off Select Items Fitting in Bucket
+                                </h1>
+                                
+                                <div className="flex items-center my-4 text-xl md:text-3xl">
+                                    <h1 className=" font-bold">
+                                        $100
+                                    </h1>
+                                    <del className="text-gray-500 mx-4">$150</del>
+                                    <p className="text-green-700 font-bold">
+                                    41% off
+                                    </p>
+                                </div>
+                                <div className="flex items-center space-x-2 text-xl p-2">
+                                    <Link
+                                        href="/"
+                                        className=" bg-secondary p-2 rounded-full text-white font-bold text-center w-full block my-4"
+                                    >
+                                        Get Deal at SIERRA
+                                    </Link>
+                                    
+                                </div>
+                            </div>
+                        </div>
 
-                                <Link
-                                    href="/"
-                                    className=" bg-secondary p-2 rounded-full text-white font-bold text-center w-full block my-4"
-                                >
-                                    Get Deal at SIERRA
-                                </Link>
+                        <div>
+                            <h1 className="text-xl font-bold mb-1 mt-4">
+                            Specifications
+                            </h1>
+                            <div className="bg-white mt-2">
+                                <Specifications
+                                    items={[
+                                    {
+                                        title: "GENERAL",
+                                        content: 
+                                        <>
+                                        <table className="w-full">
+                                            <tbody className="w-full">
+                                                <tr className="w-full flex md:items-center flex-col md:flex-row">
+                                                    <td className="md:w-96 p-2 font-bold">
+                                                        Screen size
+                                                    </td>
+                                                    <td className="w-auto p-2">75 inch</td>
+                                                </tr>
+                                                <tr className="w-full flex md:items-center flex-col md:flex-row">
+                                                    <td className="md:w-96 p-2 font-bold">
+                                                    Display Resolution
+                                                    </td>
+                                                    <td className="w-auto p-2">4K Ultra HD (3,840 x 2,160)</td>
+                                                </tr>
+                                                <tr className="w-full flex md:items-center flex-col md:flex-row">
+                                                    <td className="md:w-96 p-2 font-bold">
+                                                    Refresh rate
+                                                    </td>
+                                                    <td className="w-auto p-2">60 Hz</td>
+                                                </tr>
+                                                <tr className="w-full flex md:items-center flex-col md:flex-row">
+                                                    <td className="md:w-96 p-2 font-bold">
+                                                        Backlight type
+                                                    </td>
+                                                    <td className="w-auto p-2">Direct</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </>,
+                                    },
+                                    {
+                                        title: "PLATFORM",
+                                        content:
+                                        <>
+                                        <table className="w-full">
+                                            <tbody className="w-full">
+                                                <tr className="w-full flex md:items-center flex-col md:flex-row">
+                                                    <td className="md:w-96 p-2 font-bold">
+                                                        Screen size</td>
+                                                    <td className="w-auto p-2">75 inch</td>
+                                                </tr>
+                                                <tr className="w-full flex md:items-center flex-col md:flex-row">
+                                                    <td className="md:w-96 p-2 font-bold">Display Resolution</td>
+                                                    <td className="w-auto p-2">4K Ultra HD (3,840 x 2,160)</td>
+                                                </tr>
+                                                <tr className="w-full flex md:items-center flex-col md:flex-row">
+                                                    <td className="md:w-96 p-2 font-bold">Refresh rate</td>
+                                                    <td className="w-auto p-2">60 Hz</td>
+                                                </tr>
+                                                <tr className="w-full flex md:items-center flex-col md:flex-row">
+                                                    <td className="md:w-96 p-2 font-bold">Backlight type&nbsp;</td>
+                                                    <td className="w-auto p-2">Direct&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </>,
+                                    },
+                                    ]}
+                                />
                             </div>
                         </div>
 
@@ -295,7 +324,7 @@ const IndexPage: React.FC = () => {
                             />
                         </Link>
                     </div>
-                    <div className="w-full md:w-[28%] hidden md:block">
+                    <div className="w-full md:w-[25%] hidden md:block">
                         <div className="sticky top-0">
                             <Link
                             href="/"

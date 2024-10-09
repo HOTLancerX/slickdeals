@@ -95,7 +95,7 @@ const Table: React.FC<TableProps> = ({ items, title }) => {
                       alt=""
                       className="mr-2"
                     />
-                    <span className="line-clamp-2 font-normal text-sm">
+                    <span className="line-clamp-2 font-normal text-sm text-nowrap whitespace-nowrap">
                       {deal.title}
                     </span>
                   </Link>
@@ -113,7 +113,7 @@ const Table: React.FC<TableProps> = ({ items, title }) => {
                     <span className="text-green-700">{deal.discount}</span>
                   )}
                 </td>
-                <td className="py-3 px-6 text-sm">{deal.merchant}</td>
+                <td className="py-3 px-6 text-sm text-nowrap whitespace-nowrap">{deal.merchant}</td>
                 <td className="py-3 px-6">
                   <div className="flex items-center divide-x gap-3">
                     <span className="flex items-center">👍 {deal.activity.likes}</span>

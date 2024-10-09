@@ -35,9 +35,9 @@ const Sliders: React.FC<SliderProps> = ({ slides }) => {
   }, [currentImage]); // Reset the interval whenever the currentImage changes
 
   return (
-    <div className="flex flex-col group items-start p-2 md:p-4">
+    <div className="flex flex-col group items-start p-2">
       {slides.length > 1 && (
-        <div className="w-full bg-gray-200 relative h-72 md:h-[466px] flex items-center justify-center">
+        <div className="w-full bg-gray-200 relative h-72 md:h-80 flex items-center justify-center">
           <Image
             width={600}
             height={600}
