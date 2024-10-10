@@ -239,7 +239,7 @@ const IndexPage: React.FC = () => {
                             <h1 className="text-xs md:text-sm font-bold bg-white p-2 border-b">
                                 Description
                             </h1>
-                            <div className="bg-white text-xs md:text-sm leading-normal">
+                            <div className="bg-white text-sm md:text-base leading-normal">
                             <ReadMore height="h-40">
                                 <p className="mb-2">
                                     It is a long established fact that a reader will be distracted by the
