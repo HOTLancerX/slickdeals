@@ -86,8 +86,8 @@ const Table: React.FC<TableProps> = ({ items, title }) => {
           <tbody>
             {paginatedItems.map((deal, index) => (
               <tr key={index} className="border-t border-gray-200">
-                <td className="max-w-sm">
-                  <Link href={deal.link} className="py-3 px-6 flex items-center">
+                <td className="py-3 px-6">
+                  <Link href={deal.link} className="flex items-center md:max-w-sm md:w-full w-96">
                     <Image
                       src={deal.img}
                       width={70}
@@ -95,7 +95,7 @@ const Table: React.FC<TableProps> = ({ items, title }) => {
                       alt=""
                       className="mr-2"
                     />
-                    <span className="line-clamp-2 font-normal text-sm text-nowrap whitespace-nowrap">
+                    <span className="line-clamp-2 font-normal text-sm w-full">
                       {deal.title}
                     </span>
                   </Link>
@@ -104,9 +104,9 @@ const Table: React.FC<TableProps> = ({ items, title }) => {
                   <div className="flex items-center">
                     <span className="font-semibold text-lg">{deal.price}</span>
                     {deal.originalPrice && (
-                      <span className="ml-2 text-gray-400 font-normal">
+                      <del className="ml-2 text-gray-400 font-normal">
                         {deal.originalPrice}
-                      </span>
+                      </del>
                     )}
                   </div>
                   {deal.discount && (
@@ -115,24 +115,26 @@ const Table: React.FC<TableProps> = ({ items, title }) => {
                 </td>
                 <td className="py-3 px-6 text-sm text-nowrap whitespace-nowrap">{deal.merchant}</td>
                 <td className="py-3 px-6">
-                  <div className="flex items-center divide-x gap-3">
-                    <span className="flex items-center">👍 {deal.activity.likes}</span>
-                    <span className="flex items-center">💬 {deal.activity.comments}</span>
-                    <span className="flex items-center">👁️ {deal.activity.views.toLocaleString()}</span>
+                  <div className="flex items-center divide-x gap-3 text-nowrap whitespace-nowrap">
+                    <span className="flex items-center text-nowrap whitespace-nowrap">👍 {deal.activity.likes}</span>
+                    <span className="flex items-center text-nowrap whitespace-nowrap">💬 {deal.activity.comments}</span>
+                    <span className="flex items-center text-nowrap whitespace-nowrap">👁️ {deal.activity.views.toLocaleString()}</span>
                   </div>
                 </td>
-                <td className="py-3 px-6 text-sm flex items-center justify-end gap-2">
-                    <Link
-                        href="/"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
-                    </Link>
-                    <Link
-                        href="/"
-                    >
-                        <svg className="text-red-500" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M7.616 20q-.672 0-1.144-.472T6 18.385V6H5V5h4v-.77h6V5h4v1h-1v12.385q0 .69-.462 1.153T16.384 20zM17 6H7v12.385q0 .269.173.442t.443.173h8.769q.23 0 .423-.192t.192-.424zM9.808 17h1V8h-1zm3.384 0h1V8h-1zM7 6v13z"/></svg>
-                    </Link>
-                    <ToggleSwitch switch="enable" />
+                <td className="py-3 px-6">
+                  <div className="text-sm flex items-center justify-end gap-2">
+                      <Link
+                          href="/"
+                      >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                      </Link>
+                      <Link
+                          href="/"
+                      >
+                          <svg className="text-red-500" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M7.616 20q-.672 0-1.144-.472T6 18.385V6H5V5h4v-.77h6V5h4v1h-1v12.385q0 .69-.462 1.153T16.384 20zM17 6H7v12.385q0 .269.173.442t.443.173h8.769q.23 0 .423-.192t.192-.424zM9.808 17h1V8h-1zm3.384 0h1V8h-1zM7 6v13z"/></svg>
+                      </Link>
+                      <ToggleSwitch switch="enable" />
+                  </div>
                 </td>
               </tr>
             ))}
