@@ -81,7 +81,7 @@ const Sliders: React.FC<SliderProps> = ({ slides }) => {
                 key={index}
                 src={slide.image || "/default.jpg"}
                 alt={`Thumbnail ${index + 1}`}
-                className={`flex-none cursor-pointer w-24 h-24 object-cover bg-white border-2 ${
+                className={`flex-none cursor-pointer w-16 h-16 object-cover bg-white border ${
                     currentImage === index ? 'border-main' : 'border-white'
                 }`}
                 onClick={() => setCurrentImage(index)}
