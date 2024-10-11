@@ -114,6 +114,8 @@ export default function RootLayout({
                 { title: "My account", link: '/account' },
                 { title: "Coupons", link: '/account/coupons' },
                 { title: "Saved Items", link: '/account/wishlist' },
+                { title: "Voting", link: '/account/vot' },
+                { title: "Comments", link: '/account/comment' },
                 { title: 'Setting', link: '/account/setting' },
               ]}
             />
