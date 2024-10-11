@@ -2,6 +2,7 @@ import Carousel from "@/components/Carousel";
 import Coupons from "@/components/Coupons";
 import ReadMore from "@/components/ReadMore";
 import Sliders from "@/components/Sliders";
+import SocialShare from "@/components/SocialShare";
 import Specifications from "@/components/Specifications";
 import Image from "next/image";
 import Link from "next/link";
@@ -146,6 +147,7 @@ const IndexPage: React.FC = () => {
                                     </Link>
                                     
                                 </div>
+                                <SocialShare link="https://jqdeal.vercel.app/products/1" />
                             </div>
                         </div>
 
