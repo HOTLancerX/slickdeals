@@ -325,6 +325,86 @@ const IndexPage: React.FC = () => {
                                 className="h-min w-full"
                             />
                         </Link>
+                        <div className="my-3">
+                            <h1 className="text-xs md:text-sm font-bold bg-white p-2 border-b">
+                                About the Poster
+                            </h1>
+                            <div className="bg-white p-4">
+                                <div className="flex flex-col items-center justify-center">
+                                    <Image
+                                        src="/user/1.jpg"
+                                        width={100}
+                                        height={100}
+                                        alt="ads"
+                                        className="h-28 rounded-full object-cover border-4 mr-2 w-28"
+                                    />
+                                    <h1 className="font-bold text-xl mt-2">
+                                        Blue Ranger
+                                    </h1>
+                                    <p>
+                                        Joined in Mar 2020
+                                    </p>
+                                </div>
+                                <div className=" grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                                    <div className="bg-gray-50 rounded p-2 flex flex-col items-center justify-center">
+                                        <h1 className="text-blue-500 font-bold text-xl">
+                                            2,251
+                                        </h1>
+                                        <div className="flex items-center space-x-1 mt-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M20.605 5.988a2.8 2.8 0 0 0-2.6-2.59l-4.56-.32a2.84 2.84 0 0 0-2.17.81L3.9 11.278a2.794 2.794 0 0 0 0 3.95l4.87 4.88a2.8 2.8 0 0 0 3.96 0l7.38-7.39a2.78 2.78 0 0 0 .81-2.17ZM12.015 19.4a1.8 1.8 0 0 1-2.54 0l-4.87-4.87a1.793 1.793 0 0 1 0-2.55l1.17-1.17l7.42 7.42Zm7.38-7.38l-5.5 5.5l-7.41-7.42l5.5-5.5a1.8 1.8 0 0 1 1.27-.53c.04 0 .08.01.12.01l4.56.32a1.8 1.8 0 0 1 1.67 1.66l.32 4.56a1.83 1.83 0 0 1-.525 1.398Z"/><circle cx="17" cy="6.999" r=".862" fill="currentColor"/></svg>
+                                            <p>
+                                            Deal Posts
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="bg-gray-50 rounded p-2 flex flex-col items-center justify-center">
+                                        <h1 className="text-blue-500 font-bold text-xl">
+                                            2,365
+                                        </h1>
+                                        <div className="flex items-center space-x-1 mt-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h13a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-4.59l-3.7 3.71c-.18.18-.43.29-.71.29a1 1 0 0 1-1-1v-3H5a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3m13 1H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h4v4l4-4h5a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+                                            <p>
+                                            Comments Posts
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="bg-gray-50 rounded p-2 flex flex-col items-center justify-center">
+                                        <h1 className="text-blue-500 font-bold text-xl">
+                                            16,464
+                                        </h1>
+                                        <div className="flex items-center space-x-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M6.04 7.772c-2.46.557-3.69.835-3.983 1.776c-.292.94.546 1.921 2.223 3.882l.434.507c.476.557.715.836.822 1.18c.107.345.071.717-.001 1.46l-.066.677c-.253 2.617-.38 3.925.386 4.506s1.918.051 4.22-1.009l.597-.274c.654-.302.981-.452 1.328-.452s.674.15 1.329.452l.595.274c2.303 1.06 3.455 1.59 4.22 1.01c.767-.582.64-1.89.387-4.507m1.189-3.824c1.677-1.96 2.515-2.941 2.223-3.882s-1.523-1.22-3.983-1.776l-.636-.144c-.699-.158-1.048-.237-1.329-.45s-.46-.536-.82-1.182l-.328-.588C13.58 3.136 12.947 2 12 2s-1.58 1.136-2.847 3.408"/></svg>
+                                            <p>
+                                                Reputation Points
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="bg-gray-50 rounded p-2 flex flex-col items-center justify-center">
+                                        <h1 className="text-blue-500 font-bold text-xl">
+                                        1,715
+                                        </h1>
+                                        <div className="flex items-center space-x-1 mt-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path d="M12 21a9 9 0 1 0-6.364-2.636"/><path d="m16 10l-3.598 4.318c-.655.786-.983 1.18-1.424 1.2s-.803-.343-1.527-1.067L8 13"/></g></svg>
+                                            <p>
+                                                Votes Submitted
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <Link
+                            href="/"
+                            className="bg-white p-1 md:p-2 shadow border block"
+                        >
+                            <Image
+                                src="/ads/720.png"
+                                width={720}
+                                height={90}
+                                alt="ads"
+                                className="h-min w-full"
+                            />
+                        </Link>
                     </div>
                     <div className="w-full md:w-[25%] hidden md:block">
                         <div className="sticky top-0">
