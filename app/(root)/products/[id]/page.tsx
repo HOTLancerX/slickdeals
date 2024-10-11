@@ -1,4 +1,5 @@
 import Carousel from "@/components/Carousel";
+import Comment from "@/components/Comment";
 import Coupons from "@/components/Coupons";
 import ReadMore from "@/components/ReadMore";
 import Sliders from "@/components/Sliders";
@@ -425,6 +426,44 @@ const IndexPage: React.FC = () => {
                                 className="h-min w-full"
                             />
                         </Link>
+                        <Comment
+                            items={[
+                            {
+                                id: 1,
+                                text: "This is the first comment.",
+                                img: "/user/1.jpg",
+                                author: "User1",
+                                votes: 5,
+                                replies: [
+                                {
+                                    id: 2,
+                                    text: "This is a reply to the first comment.",
+                                    img: "/user/1.jpg",
+                                    author: "User2",
+                                    votes: 3,
+                                    replies: [
+                                    {
+                                        id: 3,
+                                        text: "This is a reply to the first reply.",
+                                        img: "/user/1.jpg",
+                                        author: "User3",
+                                        votes: 1,
+                                        replies: [],
+                                    },
+                                    ],
+                                },
+                                ],
+                            },
+                            {
+                                id: 4,
+                                text: "This is another comment.",
+                                img: "/user/1.jpg",
+                                author: "User4",
+                                votes: 2,
+                                replies: [],
+                            },
+                            ]}
+                        />
                     </div>
                     <div className="w-full md:w-[25%] hidden md:block">
                         <div className="sticky top-0">
