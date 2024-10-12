@@ -16,7 +16,7 @@ export default function RootLayout({
         <Tab
           items={[
             { title: "Frontpage", link: '/' },
-            { title: "Coupons", link: '/coupon' },
+            { title: "Coupons", link: '/coupons' },
             { title: "For You", link: '/for-you' },
             { title: "Popular", link: '/popular' },
             { title: "Comments", link: '/account/comment' },

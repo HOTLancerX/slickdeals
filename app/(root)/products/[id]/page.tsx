@@ -1,6 +1,5 @@
 import Carousel from "@/components/Carousel";
 import Comment from "@/components/Comment";
-import Coupons from "@/components/Coupons";
 import ReadMore from "@/components/ReadMore";
 import Sliders from "@/components/Sliders";
 import SocialShare from "@/components/SocialShare";
@@ -438,14 +437,14 @@ const IndexPage: React.FC = () => {
                                 {
                                     id: 2,
                                     text: "This is a reply to the first comment.",
-                                    img: "/user/1.jpg",
+                                    img: "/user/2.jpg",
                                     author: "User2",
                                     votes: 3,
                                     replies: [
                                     {
                                         id: 3,
                                         text: "This is a reply to the first reply.",
-                                        img: "/user/1.jpg",
+                                        img: "/user/3.jpg",
                                         author: "User3",
                                         votes: 1,
                                         replies: [],
@@ -457,7 +456,7 @@ const IndexPage: React.FC = () => {
                             {
                                 id: 4,
                                 text: "This is another comment.",
-                                img: "/user/1.jpg",
+                                img: "/user/4.jpg",
                                 author: "User4",
                                 votes: 2,
                                 replies: [],
@@ -479,47 +478,6 @@ const IndexPage: React.FC = () => {
                                 className="h-min w-min"
                             />
                             </Link>
-
-                            <Coupons
-                            title="Featured Coupons & Discounts"
-                            items={[
-                                {
-                                img: "/coupons/1.png",
-                                sub: "$500 OFF",
-                                title: "1408 Redemptions",
-                                },
-                                {
-                                img: "/coupons/2.png",
-                                sub: "$300 OFF",
-                                title: "1080 Redemptions",
-                                },
-                                {
-                                img: "/coupons/3.png",
-                                sub: "10% OFF",
-                                title: "758 Redemptions",
-                                },
-                                {
-                                img: "/coupons/4.png",
-                                sub: "Buy 1 Get 1 Free",
-                                title: "950 Redemptions",
-                                },
-                                {
-                                img: "/coupons/5.png",
-                                sub: "$100 OFF",
-                                title: "600 Redemptions",
-                                },
-                                {
-                                img: "/coupons/6.png",
-                                sub: "20% OFF",
-                                title: "1200 Redemptions",
-                                },
-                                {
-                                img: "/coupons/7.png",
-                                sub: "Free Shipping",
-                                title: "1100 Redemptions",
-                                },
-                            ]}
-                            />
 
                             <Link
                             href="/"
