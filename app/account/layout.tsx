@@ -111,13 +111,14 @@ export default function RootLayout({
             </div>
             <MenusUser
               items={[
-                { title: "My account", link: '/account' },
+                { title: "My order", link: '/account' },
                 { title: "Messenger", link: '/account/chat' },
-                { title: "Coupons", link: '/account/coupons' },
-                { title: "Saved Items", link: '/account/wishlist' },
-                { title: "Voting", link: '/account/vot' },
-                { title: "Comments", link: '/account/comment' },
                 { title: 'Setting', link: '/account/setting' },
+                { title: "Wishlist", link: '/account/wishlist' },
+                { title: "Seller dashboard", link: '/account/seller-dashboard' },
+                { title: "Seller product", link: '/account/seller-product' },
+                { title: "Seller Setting", link: '/account/seller-setting' },
+                { title: "Seller withdraw", link: '/account/seller-withdraw' },
               ]}
             />
           </div>
